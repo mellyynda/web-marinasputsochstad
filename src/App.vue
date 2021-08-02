@@ -1,17 +1,25 @@
 <template>
-  <TheContactBar/>
-  <nav id="nav">
-    <router-link to="/" class="logo">
-      <img class="logo" alt="logo" src="./assets/logo.png">
-      <img class="logo" alt="logo" src="./assets/company-name.png">
-    </router-link>
-    <div class="nav-elem">
-      <router-link to="/services" :class="{ 'nav-link': true, active: currentRoute === 'Services' }">Tjänster</router-link>
-      <router-link to="/about" :class="{ 'nav-link': true, active: currentRoute === 'About' }">Om oss</router-link>
-    </div>
-  </nav>
-  <router-view/>
+
+  <section class="top">
+    <TheContactBar/>
+    <nav id="nav">
+      <router-link to="/" class="logo">
+        <img class="logo" alt="logo" src="./assets/logo.png">
+        <img class="logo" alt="logo" src="./assets/company-name.png">
+      </router-link>
+      <div class="nav-elem">
+        <router-link to="/services" :class="{ 'nav-link': true, active: currentRoute === 'Services' }">Tjänster</router-link>
+        <router-link to="/about" :class="{ 'nav-link': true, active: currentRoute === 'About' }">Om oss</router-link>
+      </div>
+    </nav>
+  </section>
+  
+  <main>
+    <router-view/>
+  </main>
+
   <TheFooter/>
+  
 </template>
 
 <script>

@@ -29,5 +29,12 @@ export default {
 footer {
   background-color: #27763D;
   color: #fff;
+  display: flex;
+}
+.half {
+  /* display: inline-block;
+  width: 50%; */
+  flex: 0 0 50%;
+  height: 100%;
 }
 </style>
