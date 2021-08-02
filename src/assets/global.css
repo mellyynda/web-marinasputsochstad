@@ -31,7 +31,7 @@ footer{
 }
 
 /*typography*/
-h1{
+h1, h4 {
   font-family:  'Raleway', 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 400;

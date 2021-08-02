@@ -19,7 +19,7 @@
   </main>
 
   <TheFooter/>
-  
+
 </template>
 
 <script>
@@ -48,6 +48,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 50px;
 }
 .nav-link {
   font-family: 'Open Sans', sans-serif;
