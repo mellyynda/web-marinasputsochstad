@@ -1,0 +1,55 @@
+
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: 2px dotted #FF1D15;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/*END RESETS*/

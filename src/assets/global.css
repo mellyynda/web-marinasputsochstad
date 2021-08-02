@@ -1,0 +1,55 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Raleway:wght@300;400&display=swap');
+
+html {
+  font-size: calc(14px + (18 - 14) * calc((100vw - 300px) / (1600 - 300)));
+  /* the math behind: [minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+}
+
+body {  
+  width: 100%;
+  font-family: 'Raleway','Montserrat', 'Open Sans', sans-serif;
+}
+
+/*typography*/
+h1{
+  font-family:  'Raleway', 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+h2 {
+  font-family:  'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #27763D;
+  font-size: 1.76rem;
+}
+h3 {
+  font-family:  'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #A09F9F;
+  font-size: 1.73rem;
+  line-height: 1.1;
+}
+p {
+  line-height: 1.82;
+}
+
+/*custom scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #adadad;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #575757;
+}
