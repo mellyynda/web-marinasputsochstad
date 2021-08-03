@@ -27,6 +27,7 @@ export default {
   background-color:#27763D;
   position: fixed;
   width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .contact-details,
 .contact-details>a {
