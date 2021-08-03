@@ -62,7 +62,7 @@ export default {
     align-self: stretch;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 </style>
