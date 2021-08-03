@@ -1,10 +1,14 @@
 <template>
   <section class="contact-bar">
     <div class="contact-details">
-      <img class="icon" alt="ring oss" src="../assets/icons/call.png">
-      <span>0123456789</span>
-      <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
-      <span>info@marinasputs.se</span>
+      <a href="tel:+4676-454-5088">
+        <img class="icon" alt="ring oss" src="../assets/icons/call.png">
+        <span>0123456789</span>
+      </a>
+      <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">
+        <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
+        <span>info@marinasputs.se</span>
+      </a>
     </div>
     <div class="social"></div>
   </section>
@@ -24,7 +28,8 @@ export default {
   position: fixed;
   width: 100%;
 }
-.contact-details {
+.contact-details,
+.contact-details>a {
   display: flex;
   align-items: center;
   color: #fff;
