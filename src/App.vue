@@ -60,8 +60,8 @@ export default {
   white-space: nowrap;
 }
 .logo {
-  width: 80%;
-  max-width: 220px;
+  width: 100%;
+  max-width: 190px;
 }
 .active {
   color: #A09F9F;
