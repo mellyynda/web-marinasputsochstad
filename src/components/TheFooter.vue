@@ -27,10 +27,10 @@
           <span>0123456789</span>
         </a>
         
-          <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">
-            <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
-            <span>info@marinasputs.se</span>
-          </a>
+        <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">
+          <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
+          <span>info@marinasputs.se</span>
+        </a>
         
       </div>
     </div>
