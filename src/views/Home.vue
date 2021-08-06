@@ -9,7 +9,7 @@
     <div class="welcome">
       <h3>Välkommen till oss på Marinas Puts och Städ!</h3>
       <div class="text-box">
-        <p>Vill du ha hjälp med till exempel hemstädning, storstädning, kontorsstädning, trappstädning, fönsterputs eller flyttstädning? Kika gärna i menyn ovan vad vi kan hjälpa just dig med. </p>
+        <p>Vill du ha hjälp med till exempel hemstädning, storstädning, kontorsstädning, trappstädning, fönsterputs eller flyttstädning? Kika gärna i menyn ovan vad vi kan hjälpa just dig med. <br> Vi kommer till dig oavset var du är i Stockholms län.</p>
         <div class="list">
           <p>Varfor ska du välja oss:</p>
           <ul>

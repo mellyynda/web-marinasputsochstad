@@ -1,19 +1,49 @@
 <template>
   <div class="services">
-    <h1>This is the services page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit hic doloremque a distinctio magni sit optio repudiandae unde ratione harum mollitia ut rem consequatur quasi, aliquid sed. Illum, sint.</p>
-    <h2>Städfirma i toppklass</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, rerum. Molestias ex labore obcaecati eius modi repudiandae nihil nisi. Veritatis sequi rerum nulla illum aperiam vero odio perspiciatis dolores excepturi.</p>
-    <h3>Välkommen till oss på Marinas Puts och Städ!</h3>
+    <div v-for="card in cards" :key="card.title">
+      <Card :card="card" />
+    </div>
+    
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+import Card from '../components/Card.vue'
 
 export default {
   name: 'Services',
- 
+  components: {
+    Card
+  },
+  data() {
+    return {
+      cards: [{
+        title: 'HEMSTÄDNING',
+        photoUrl: '../assets/services/rainbow-clean.png',
+        photoUrlXS: '../assets/services/rainbow-clean-mobile.png',
+        price: '250 kr/timme'
+      },{
+        title: 'KONTORSTÄDNING',
+        photoUrl: '../assets/services/office-clean.png',
+        photoUrlXS: '../assets/services/office-clean-mobile.png',
+        price: 'Kontakta oss för offert!'
+      },{
+        title: 'FLYTTSTÄDNING',
+        photoUrl: '../assets/services/move-clean.png',
+        photoUrlXS: '../assets/services/move-clean-mobile.png',
+        price: '40 kr/mp'
+      },{
+        title: 'FÖNSTERPUTS',
+        photoUrl: '../assets/services/window-clean.png',
+        photoUrlXS: '../assets/services/window-clean-mobile.png',
+        price: 'Kontakta oss för offert!'
+      },{
+        title: 'STORSTÄDNING',
+        photoUrl: '../assets/services/big-clean.png',
+        photoUrlXS: '../assets/services/big-clean-mobile.png',
+        price: 'Kontakta oss för offert!'
+      }]
+    }
+  }
 }
 </script>
