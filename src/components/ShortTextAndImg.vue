@@ -49,4 +49,15 @@ section {
   width: 35%;
   border-radius: 50%;
 }
+@media screen and (max-width:567px) {
+  section {
+    flex-direction: column;
+  }
+  .half h2, .half p {
+    margin: 0 10% 25px 8%;
+  }
+  .visual {
+    width: 50%;
+  }
+}
 </style>
