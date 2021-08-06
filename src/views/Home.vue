@@ -6,6 +6,22 @@
       </div>
     </div>
     <ShortTextAndImg/>
+    <div class="welcome">
+      <h3>Välkommen till oss på Marinas Puts och Städ!</h3>
+      <div class="text-box">
+        <p>Vill du ha hjälp med till exempel hemstädning, storstädning, kontorsstädning, trappstädning, fönsterputs eller flyttstädning? Kika gärna i menyn ovan vad vi kan hjälpa just dig med. </p>
+        <div class="list">
+          <p>Varfor ska du välja oss:</p>
+          <ul>
+            <li>Vi tar hand om ditt hus/kontor och använder miljövänliga produkter.</li>
+            <li>Vi gillar att hjälpa dig med vad du vill, hur du behöver med personlig anpassade erbjudande.</li>
+            <li>Om kunden är nöjd vi är nöjda! <span> Din glädje är vår prioritet! </span></li>
+          </ul>
+        </div>
+      </div>
+      <router-link to="/about">Mer om oss →</router-link>
+      
+    </div>
 </template>
 
 <script>
@@ -54,10 +70,56 @@ export default {
   text-transform: uppercase;
   text-shadow: 0px 3px 3px rgba(255,255,255,0.5) inset;
 }
+
+.welcome{
+  max-width: 1250px;
+  margin: 0 auto 40px auto;
+}
+.welcome h3, .welcome a {
+  margin: 0 8% 25px 8%;
+}
+.text-box {
+  margin: 0 8%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-box>p, .text-box>.list{
+  flex: 0 0 50%;
+}
+.text-box>p {
+  margin-bottom: 25px;
+}
+.text-box>.list p {
+  font-weight: 600;
+}
+.text-box>.list ul {
+ list-style: inside;
+ margin-bottom: 20px;
+}
+.text-box>.list>ul>li>span {
+  color: #FF1D15;
+}
+.welcome>a {
+  text-transform: uppercase;
+  color: #27763D;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: 1px solid #27763D ;
+  border-radius: 18px;
+  padding: 9px;
+}
+
 @media screen and (max-width:800px) {
   .cover {
     background-image: url("../assets/home/clean-desk-mob.jpg");
     height: 400px;
+  }
+}
+@media screen and (max-width:647px) {
+  .text-box {
+    flex-direction: column;
   }
 }
 </style>

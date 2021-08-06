@@ -1,6 +1,5 @@
 <template>
   <footer>
-
     <div class="half">
       <h4>FÖLJ OSS</h4>
       <div class="footer-elem">
@@ -34,7 +33,6 @@
         
       </div>
     </div>
-
   </footer>
 </template>
 
