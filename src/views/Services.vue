@@ -3,7 +3,6 @@
     <div v-for="card in cards" :key="card.title">
       <Card :card="card" />
     </div>
-    
   </div>
 </template>
 
@@ -19,31 +18,49 @@ export default {
     return {
       cards: [{
         title: 'HEMSTÄDNING',
-        photoUrl: '../assets/services/rainbow-clean.png',
-        photoUrlXS: '../assets/services/rainbow-clean-mobile.png',
+        img: 'home',
+        imgXS: 'home-xs',
         price: '250 kr/timme'
       },{
         title: 'KONTORSTÄDNING',
-        photoUrl: '../assets/services/office-clean.png',
-        photoUrlXS: '../assets/services/office-clean-mobile.png',
-        price: 'Kontakta oss för offert!'
+        img: 'office',
+        imgXS: 'office-xs',
+        price: 'Ring oss för offert!'
       },{
         title: 'FLYTTSTÄDNING',
-        photoUrl: '../assets/services/move-clean.png',
-        photoUrlXS: '../assets/services/move-clean-mobile.png',
+        img: 'move',
+        imgXS: 'move-xs',
         price: '40 kr/mp'
       },{
         title: 'FÖNSTERPUTS',
-        photoUrl: '../assets/services/window-clean.png',
-        photoUrlXS: '../assets/services/window-clean-mobile.png',
-        price: 'Kontakta oss för offert!'
+        img: 'window',
+        imgXS: 'window-xs',
+        price: 'Ring oss för offert!'
       },{
         title: 'STORSTÄDNING',
-        photoUrl: '../assets/services/big-clean.png',
-        photoUrlXS: '../assets/services/big-clean-mobile.png',
-        price: 'Kontakta oss för offert!'
+        img: 'big',
+        imgXS: 'big-xs',
+        price: 'Ring oss för offert!'
       }]
     }
   }
 }
 </script>
+
+<style scoped>
+.services {
+  width: 95%;
+  max-width: 1024px;
+  margin: 45px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.services>div {
+  width: 280px;
+  margin-bottom: 25px;
+}
+</style>
