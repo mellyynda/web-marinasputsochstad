@@ -3,16 +3,26 @@
     <div v-for="card in filterCards(cards)" :key="card.title">
       <Card :card="card" />
     </div>
+    
+    <Article 
+      title="Vi erbjuder kvalitet"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      bold="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      img="services/quality.png"
+      imgAlt="ren bäd"
+    />
   </div>
 </template>
 
 <script>
 import Card from '../components/Card.vue'
+import Article from '../components/Article.vue'
 
 export default {
   name: 'Services',
   components: {
-    Card
+    Card,
+    Article
   },
   data() {
     return {
