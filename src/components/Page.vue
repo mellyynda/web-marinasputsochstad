@@ -57,11 +57,16 @@ export default {
   .page {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .page h2 {
+    width: 100%;
   }
   .page>img {
     float: none;
     margin-left: 8%;
+    align-self: center;
+    order: -1;
   }
 }
 </style>

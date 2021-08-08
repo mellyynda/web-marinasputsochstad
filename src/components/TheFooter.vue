@@ -7,7 +7,7 @@
         <img class="social" src="../assets/icons/social/instagram.png" alt="gå till instagram">
       </div>
       <div class="footer-elem">
-        <span><a href="">Så hanterar vi Covid-19</a></span>
+        <span><router-link to="/covid-info">Så hanterar vi Covid-19</router-link></span>
       </div>
       <div class="footer-elem">
         <span>Marinas Puts &#38; Städ  AB 2021</span>
