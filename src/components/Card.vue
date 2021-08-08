@@ -9,17 +9,23 @@
       <teleport to=".modals" v-if="showModal">
         <Modal theme="sale" @close="toggleModal" >
           <template v-slot:links>
-            <a href="">sign up now</a>
-            <a href="">more info</a>
+            <a href="tel:+46760853358">ring oss</a>
+            <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">mejla oss</a>
           </template>
-          <h1>Ninja Giveaway!</h1>
-          <p>Grab your ninja swag for half price</p>
+          <h1>{{ card.title }} 
+            <!-- <span @click="downloadPdf" title="download pdf">⬇</span> -->
+          </h1>      
+          <p>info@marinasputs.se</p>
+          <p>(+46) 76 085 33 58</p>
+          <h2>Vad som ingår i tjänsten:</h2>
+          <div v-for="room in card.details" :key="room.room">
+            <h5>{{ room.room }}</h5>
+            <ul>
+              <li v-for="(item, index) in room.item" :key="index">{{ item }}</li>
+            </ul>
+          </div>          
         </Modal>
       </teleport>
-      <!-- </a> -->
-      <!-- <div class="text" v-if="showDetails"> 
-      <h1>details</h1>
-      </div> -->
     </div>
 </template>
 
@@ -41,7 +47,10 @@ export default {
     toggleModal() {
       this.showModal = !this.showModal;
       console.log(this.showModal)
-    }
+    },
+    // downloadPdf() {
+    //   window.open("../downloads/home.pdf")
+    // }
   }
 }
 </script>

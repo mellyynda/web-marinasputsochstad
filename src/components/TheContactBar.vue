@@ -1,9 +1,9 @@
 <template>
   <section class="contact-bar">
     <div class="contact-details">
-      <a href="tel:+4676-454-5088">
+      <a href="tel:+46760853358">
         <img class="icon" alt="ring oss" src="../assets/icons/call.png">
-        <span>0123456789</span>
+        <span>0760853358</span>
       </a>
       <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">
         <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
