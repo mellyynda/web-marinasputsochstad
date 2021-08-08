@@ -46,7 +46,6 @@ export default {
   methods: { 
     toggleModal() {
       this.showModal = !this.showModal;
-      console.log(this.showModal)
     },
     // downloadPdf() {
     //   window.open("../downloads/home.pdf")

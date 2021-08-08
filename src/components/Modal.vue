@@ -42,9 +42,9 @@ export default {
   position: relative;
 }
 .modal .close {
-  position: fixed;
-  top: 120px;
-  right: calc(5% + 20px);
+  position: absolute;
+  top: 20px;
+  right:20px;
   cursor: pointer;
   font-size: 1.3rem;
   font-weight: bolder;
