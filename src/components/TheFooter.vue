@@ -13,7 +13,7 @@
         <span>Marinas Puts &#38; Städ  AB 2021</span>
       </div>
       <div class="footer-elem">
-        <span><a href="https://github.com/mellyynda">Website created by @mellyynda © Alla rättigheter förbehållna</a></span>
+        <span><a href="https://github.com/mellyynda" target="_blank">Website created by @mellyynda © Alla rättigheter förbehållna</a></span>
       </div>
     </div>
 
