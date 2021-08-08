@@ -5,7 +5,13 @@
         <router-link to="/services" class="action-button">Ta mig till pris listan</router-link>
       </div>
     </div>
-    <ShortTextAndImg/>
+    <Article 
+      title="Städfirma i toppklass"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      bold="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      img="home/glove.png"
+      imgAlt="cleaning surface"
+    />
     <div class="welcome">
       <h3>Välkommen till oss på Marinas Puts och Städ!</h3>
       <div class="text-box">
@@ -25,13 +31,13 @@
 </template>
 
 <script>
-import ShortTextAndImg from '../components/ShortTextAndImg.vue'
+import Article from '../components/Article.vue'
 
 
 export default {
   name: 'Home',
   components: {
-    ShortTextAndImg
+    Article
   }
 }
 </script>

@@ -1,18 +1,18 @@
 <template>
   <section class="content-2-box">
     <div class="half">
-      <h2>Städfirma i toppklass{{}}</h2>
+      <h2>{{ title }}</h2>
       <img class="bubbles" src="../assets/other/bubbles.png" alt="bubbles">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>{{ text }}</p>
+      <p>{{ bold }}</p>
     </div>
-    <img class="visual" src="../assets/home/glove.png" alt="glove cleaning table">
+    <img class="visual" :src="require('../assets/' + img)" :alt="imgAlt">
   </section>
 </template>
 
 <script>
 export default {
-
+  props:['title', 'text', 'bold', 'img', 'imgAlt']
 }
 </script>
 
