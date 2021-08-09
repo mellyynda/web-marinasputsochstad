@@ -1,38 +1,40 @@
 <template>
   <footer>
-    <div class="half">
-      <h4>FÖLJ OSS</h4>
-      <div class="footer-elem">
-        <img class="social" src="../assets/icons/social/facebook.png" alt="gå till facebook">
-        <img class="social" src="../assets/icons/social/instagram.png" alt="gå till instagram">
+    <div class="content-box wrapper">
+      <div class="half">
+        <h4>FÖLJ OSS</h4>
+        <div class="footer-elem">
+          <img class="social" src="../assets/icons/social/facebook.png" alt="gå till facebook">
+          <img class="social" src="../assets/icons/social/instagram.png" alt="gå till instagram">
+        </div>
+        <div class="footer-elem">
+          <span><router-link to="/covid-info">Så hanterar vi Covid-19</router-link></span>
+        </div>
+        <div class="footer-elem">
+          <span>Marinas Puts &#38; Städ  AB 2021</span>
+        </div>
+        <div class="footer-elem">
+          <span><a href="https://github.com/mellyynda" target="_blank">Website created by @mellyynda © Alla rättigheter förbehållna</a></span>
+        </div>
       </div>
-      <div class="footer-elem">
-        <span><router-link to="/covid-info">Så hanterar vi Covid-19</router-link></span>
-      </div>
-      <div class="footer-elem">
-        <span>Marinas Puts &#38; Städ  AB 2021</span>
-      </div>
-      <div class="footer-elem">
-        <span><a href="https://github.com/mellyynda" target="_blank">Website created by @mellyynda © Alla rättigheter förbehållna</a></span>
-      </div>
-    </div>
 
-    <div class="half">
-      <h4>KONTAKTA OSS</h4>
-      <div class="contact-details">
-        
-        <a href="tel:+46760853358">
-          <img class="icon" alt="ring oss" src="../assets/icons/call.png">
-          <span>0760853358</span>
-        </a>
-        
-        <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">
-          <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
-          <span>info@marinasputs.se</span>
-        </a>
-        
+      <div class="half">
+        <h4>KONTAKTA OSS</h4>
+        <div class="contact-details">
+          
+          <a href="tel:+46760853358">
+            <img class="icon" alt="ring oss" src="../assets/icons/call.png">
+            <span>0760853358</span>
+          </a>
+          
+          <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">
+            <img class="icon" alt="mejla oss" src="../assets/icons/email.png">
+            <span>info@marinasputs.se</span>
+          </a>
+          
+        </div>
       </div>
-    </div>
+    </div>    
   </footer>
 </template>
 
@@ -44,13 +46,15 @@ export default {
 <style scoped>
 footer {
   background-color: #27763D;
-  color: #fff;
+  color: #fff;  
+}
+.wrapper {
   display: flex;
+  gap: 6%;
 }
 .half {
-  flex: 0 0 50%;
+  flex: 0 0 47%;
   height: 100%;
-  padding-left: 8%;
   font-size: 0.68rem;
 }
 h4 {

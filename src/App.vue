@@ -1,6 +1,6 @@
 <template>
 
-  <section class="top">
+  <section>
     <TheContactBar/>
     <TheNavBar/>
   </section>
@@ -28,6 +28,3 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>

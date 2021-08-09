@@ -1,6 +1,6 @@
 <template>
   <section class="contact-bar">
-    <div class="contact-details">
+    <div class="contact-details content-box">
       <a href="tel:+46760853358">
         <img class="icon" alt="ring oss" src="../assets/icons/call.png">
         <span>0760853358</span>
@@ -37,12 +37,16 @@ export default {
   color: #fff;
   height: 100%;
 }
+.contact-details>a:first-child{
+  margin-right: 5%;
+}
 .icon {
   width: 30px;
   max-height: 50px;
-  margin:0 5px 0 15px;
+  margin-right:5px;
 }
-.contact-details span {
-  font-family: 'Montserrat', 'Open Sans', sans-serif;
+.contact-details a span {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 1.1rem;
 }
 </style>

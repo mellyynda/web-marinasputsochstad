@@ -1,16 +1,19 @@
 <template>
   <div class="services">
-    <div v-for="card in filterCards(cards)" :key="card.title">
-      <Card :card="card" />
+    <div class="card-box">
+      <div v-for="card in filterCards(cards)" :key="card.title">
+        <Card :card="card" />
+      </div>
     </div>
-    
-    <Article 
-      title="Vi erbjuder kvalitet"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      bold="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      img="services/quality.png"
-      imgAlt="ren bäd"
-    />
+    <div class="content-box">
+      <Article 
+        title="Vi erbjuder kvalitet"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        bold="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        img="services/quality.png"
+        imgAlt="ren bäd"
+      />
+    </div>
   </div>
 </template>
 
@@ -224,17 +227,19 @@ export default {
 
 <style scoped>
 .services {
-  width: 95%;
-  max-width: 1024px;
   margin: 45px auto;
-  padding: 20px;
+}
+.card-box {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1024px; 
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
   justify-content: center;
   align-items: center;
 }
-.services>div {
+.card-box>div {
   width: 260px;
   margin-bottom: 25px;
 }
