@@ -35,35 +35,37 @@ export default {
   max-width: 600px;
   max-height: 80%;
   overflow: scroll;
-  padding: 20px;
+  padding: 28px;
   margin: 100px auto;
   background: white;
   border-radius: 10px;
   position: relative;
 }
 .modal .close {
-  position: absolute;
-  top: 20px;
-  right:20px;
+  position: fixed;
+  top: 120px;
+  right:calc(20px + 5%);
   cursor: pointer;
   font-size: 1.3rem;
   font-weight: bolder;
 }
-.modal h1{
+.modal h2{
   border: none;
   padding:0;
+  margin-bottom: 20px;
 }
-.modal h1>span{
+.modal h2>span{
   border-bottom: 2.8px solid #000;
   margin-left: 5%;
   cursor: pointer;
 }
-.modal p{
-  font-style:normal;
+.modal h5{
+  margin-top: 18px;
 }
 .modal ul{
   list-style: disc;
   list-style-position: inside;
+  margin-left: 20px;
 }
 .modal .actions {
   text-align: center;
@@ -108,5 +110,10 @@ export default {
 }
 .modal.dark .actions a {
   color: gainsboro;
+}
+@media screen and (min-width:636px) {
+  .modal .close {
+    right:calc(50% - 270px);
+  }
 }
 </style>

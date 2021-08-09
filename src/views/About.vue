@@ -18,8 +18,6 @@ export default {
     return {
       title: {
         name:"Den lilla familjeföretag",
-        icon:true,
-        iconPath:"about/house.png"
         },
       img: "about/hands",
       imgXS:"about/hands-mobile",

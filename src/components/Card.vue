@@ -12,12 +12,9 @@
             <a href="tel:+46760853358">ring oss</a>
             <a href="mailto:info@marinasputs.se?subject=Städning%20förfrågan">mejla oss</a>
           </template>
-          <h1>{{ card.title }} 
+          <h2>{{ card.title }} ingår:
             <!-- <span @click="downloadPdf" title="download pdf">⬇</span> -->
-          </h1>      
-          <p>info@marinasputs.se</p>
-          <p>(+46) 76 085 33 58</p>
-          <h2>Vad som ingår i tjänsten:</h2>
+          </h2>      
           <div v-for="room in card.details" :key="room.room">
             <h5>{{ room.room }}</h5>
             <ul>

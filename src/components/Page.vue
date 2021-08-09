@@ -2,7 +2,6 @@
   <div class="page">
    
     <div class="title">
-      <img v-if="title.icon" :src="require('../assets/'+ title.iconPath)" alt="house">
       <h2>{{ title.name }}</h2>
     </div> 
     <img v-if="bigScreen" :src="require('../assets/' + img + '.png')" :alt="img">
