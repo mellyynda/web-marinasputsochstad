@@ -1,6 +1,6 @@
 <template>
     <div class="card" @mouseover="focus">
-      <h1>{{ card.title }}</h1>
+      <h2>{{ card.title }}</h2>
       <img :src="require('../assets/services/' + card.imgXS + '.png')" :alt="card.title">
       <p>{{ card.price }}</p>
       <!-- <a :href='require("../downloads/" + card.img + ".pdf")' download> -->
@@ -60,15 +60,15 @@ export default {
   flex-direction: column;
   align-items: center;
   background-color: rgba(223, 223, 223, 0.8);
-  padding: 20px;
+  padding: 15px;
   border-radius: 25px;
   box-shadow: 0 0 4px 4px rgba(000, 000, 000, 0.1);
 }
 .card>* {
   margin-bottom: 20px;
 }
-.card>h1 {
-  font-size: 1.5rem;
+.card>h2 {
+  font-size: 1.6rem;
 }
 .card>img {
   width: 80%;
@@ -79,7 +79,7 @@ export default {
   text-transform: uppercase;
   background: #88C341;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 15px;
   white-space: nowrap;
   cursor: pointer;

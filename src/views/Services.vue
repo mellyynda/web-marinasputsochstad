@@ -29,7 +29,7 @@ export default {
       cards: 
       [
         {
-          title: 'HEMSTÄDNING',
+          title: 'Hemstädning',
           img: 'home',
           imgXS: 'home-xs',
           price: '250 kr/timme',
@@ -94,14 +94,14 @@ export default {
           ]
         },
         {
-          title: 'KONTORSTÄDNING',
+          title: 'Kontorstädning',
           img: 'office',
           imgXS: 'office-xs',
           price: 'Ring oss för offert!',
           use: false
         },
         {
-          title: 'FLYTTSTÄDNING',
+          title: 'Flyttstädning',
           img: 'move',
           imgXS: 'move-xs',
           price: '40 kr/mp',
@@ -153,14 +153,14 @@ export default {
           ]
         },
         {
-          title: 'FÖNSTERPUTS',
+          title: 'Fönsterputs',
           img: 'window',
           imgXS: 'window-xs',
           price: 'Ring oss för offert!',
           use: false
         },
         {
-          title: 'STORSTÄDNING',
+          title: 'Storstädning',
           img: 'big',
           imgXS: 'big-xs',
           price: 'Ring oss för offert!',
@@ -235,7 +235,7 @@ export default {
   align-items: center;
 }
 .services>div {
-  width: 280px;
+  width: 260px;
   margin-bottom: 25px;
 }
 </style>

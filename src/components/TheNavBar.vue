@@ -40,22 +40,23 @@ export default {
   max-width: 130px;
 }
 .nav-elem {
-  margin-right: 10%;
+  margin:0 10%;
   flex-grow: 1;
   display: inline-flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 10%;
 }
 .nav-link {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
+  font-weight: 600;
   text-transform: uppercase;
-  font-weight: 500;
-  color: #000;
+  color: #A09F9F;
   white-space: nowrap;
 }
 .active {
-  color: #A09F9F;
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 @media screen and (max-width:500px) {
   .nav-elem {
