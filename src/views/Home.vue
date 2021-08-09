@@ -66,7 +66,8 @@ export default {
 .action-box h1 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  font-variant: small-caps;
+  text-transform: capitalize;
+  /* font-weight: ; */
 }
 .action-box a {
   color: #fff;
