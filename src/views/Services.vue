@@ -285,12 +285,12 @@ export default {
 .card-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 3%;
-  justify-content: center;
   align-items: center;
 }
 .card-box>div {
-  width: 260px;
+  flex: 0 1 260px;
   margin-bottom: 25px;
 }
 </style>
