@@ -1,6 +1,6 @@
 <template>
   <div class="services">
-    <div class="card-box">
+    <div class="card-box content-box">
       <div v-for="card in filterCards(cards)" :key="card.title">
         <Card :card="card" />
       </div>
@@ -34,7 +34,7 @@ export default {
         {
           title: 'Hemstädning',
           img: 'home',
-          imgXS: 'home-xs',
+          imgXS: 'home',
           price: '250 kr/timme',
           use: true,
           details: [
@@ -99,14 +99,48 @@ export default {
         {
           title: 'Kontorstädning',
           img: 'office',
-          imgXS: 'office-xs',
+          imgXS: 'office',
           price: 'Ring oss för offert!',
-          use: false
+          use: true
+        },
+        {
+          title: 'Trappstädning',
+          img: 'stairs',
+          imgXS: 'stairs',
+          price: 'Ring oss för offert!',
+          use: true,
+          details: [
+            {
+              room:"TRAPPHUS OCH ENTRÉ:",
+              item:[
+                "Soppning och moppning av golv.",
+                "Soppning och moppning av hissgolv.",
+                "Glas putsas I entrédörr.",
+                "Putsning av speglar.",
+                "Dammsugning av mattor."
+              ]
+            },
+            {
+              room:"TVÄTTSTUGA:",
+              item:[
+                "Avtorkning av tvättmaskiner och torktumlare.",
+                "Soppning och moppning av golv ."
+              ]
+            },
+            {
+              room:"ÖVRIGA TJÄNSTER:",
+              item:[
+                "Element våttorkas – 200kr/timme.",
+                "Ledstång våttorkas – 200kr/timme.", 
+                "Väggar i hiss rengörs - 200kr/timme."
+              ]
+            }
+          ]
         },
         {
           title: 'Flyttstädning',
           img: 'move',
-          imgXS: 'move-xs',
+          imgXS: 'move',
           price: '40 kr/mp',
           use: true,
           details: [
@@ -158,14 +192,20 @@ export default {
         {
           title: 'Fönsterputs',
           img: 'window',
-          imgXS: 'window-xs',
+          imgXS: 'window',
           price: 'Ring oss för offert!',
-          use: false
+          use: true,
+          details: [
+            {
+              room:"Vi utför alla typer av fönsterputs med toppen resultat. Kontakta oss för offert eller mer information!",
+              item:[]
+            },
+          ]
         },
         {
           title: 'Storstädning',
           img: 'big',
-          imgXS: 'big-xs',
+          imgXS: 'big',
           price: 'Ring oss för offert!',
           use: true,
           details: [
@@ -213,6 +253,19 @@ export default {
               ]
             }
           ]
+        },
+        {
+          title: 'Strykning',
+          img: 'shirts',
+          imgXS: 'shirts',
+          price: 'Ring oss för offert!',
+          use: true,
+          details: [
+            {
+              room:"Behöver du hjälp med strykning? Vi kan hjälpa dig med att både stryka kläder och hemtextilier.",
+              item:[]
+            },
+          ]
         }
       ]
     }
@@ -230,12 +283,9 @@ export default {
   margin: 45px auto;
 }
 .card-box {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1024px; 
   display: flex;
   flex-wrap: wrap;
-  gap: 5%;
+  gap: 3%;
   justify-content: center;
   align-items: center;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="card" @mouseover="focus">
+    <div class="card">
       <h2>{{ card.title }}</h2>
       <img :src="require('../assets/services/' + card.imgXS + '.png')" :alt="card.title">
       <p>{{ card.price }}</p>
