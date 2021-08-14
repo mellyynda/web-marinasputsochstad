@@ -6,12 +6,11 @@
       <img class="logo" alt="logo" src="../assets/company-name.png">
     </router-link>
     <div class="nav-elem">
-      <router-link to="/services" :class="{ 'nav-link': true, active: currentRoute === 'Services' }">Tjänster</router-link>
+      <router-link to="/services" :class="{ 'nav-link': true, active: currentRoute === 'Services' }">Städtjänster</router-link>
       <router-link to="/about" :class="{ 'nav-link': true, active: currentRoute === 'About' }">Om oss</router-link>
     </div>
   </nav>
 </div>
-
 </template>
 
 <script>
