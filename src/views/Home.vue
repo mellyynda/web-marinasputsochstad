@@ -10,24 +10,26 @@
     </div>
     <div class="content-box">
       <Article 
-        title="Städfirma i toppklass"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        bold="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        title="Toppklass städservice"
+        text="Vi erbjuder professionell och effektiv städning till dig som har ett aktivt liv men ändå vill komma till ett skinande rent hem! Vi utför städning i hela Stockholms Län. Vi erbjuder tjänster för hem och företag av hög kvalite."
+        bold="Din tid är värdefull. Gör det enkelt för dig, anlita oss!"
         img="home/glove.png"
         imgAlt="cleaning surface"
       />
     </div>
 
     <div class="welcome content-box">
-      <h3>Välkommen till oss på Marinas Puts och Städ!</h3>
+      <h3>Marinas Puts &#38; Städ AB sätter kvaliten i fokus! </h3>
       <div class="text-box">
-        <p>Vill du ha hjälp med till exempel hemstädning, storstädning, kontorsstädning, trappstädning, fönsterputs eller flyttstädning? Kika gärna i menyn ovan vad vi kan hjälpa just dig med. <br> Vi kommer till dig oavset var du är i Stockholms län.</p>
+        <p>Vill du ha hjälp med till exempel hemstädning, storstädning, kontorsstädning, trappstädning, fönsterputs eller flyttstädning?  Kika i menyn ovan för att se vad vi har att erbjuda samt mer information. </p>
         <div class="list">
           <p>Varfor ska du välja oss:</p>
           <ul>
-            <li>Vi tar hand om ditt hus/kontor och använder miljövänliga produkter.</li>
-            <li>Vi gillar att hjälpa dig med vad du vill, hur du behöver med personlig anpassade erbjudande.</li>
-            <li>Om kunden är nöjd vi är nöjda! <span> Din glädje är vår prioritet! </span></li>
+            <li>Vi ger ditt hem kärlek- vi hjälper dig med allt</li>
+            <li>Städningen är anpassad efter dina behov</li>
+            <li>Du får alltid samma städare</li>
+            <li>Vi har företagsförsäkring</li>
+            <li> <span> En nöjd kund är guld värd! </span></li>
           </ul>
         </div>
       </div>

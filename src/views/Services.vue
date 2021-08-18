@@ -35,7 +35,7 @@ export default {
           title: 'Hemstädning',
           img: 'home',
           imgXS: 'home',
-          price: '250 kr/timme',
+          price: '200 kr/timme',
           use: true,
           details: [
             {
@@ -101,7 +101,24 @@ export default {
           img: 'office',
           imgXS: 'office',
           price: 'Ring oss för offert!',
-          use: true
+          use: true,
+          details: [
+            {
+              room:"",
+              item:[
+                "Rengöring av toalett.",
+                "Rengöring av eventuella kök.",
+                "Moppning/våttorkning.",
+                "Dammsugning.",
+                "Avtorkning av ytor, lister, knappar osv."
+              ]
+            },
+            {
+              room:"Fönsterputsning ingår inte i en kontorsstädning men detta kan beställas som en extratjänst.",
+              item:[
+              ]
+            }
+          ]
         },
         {
           title: 'Trappstädning',

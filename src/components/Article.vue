@@ -45,6 +45,7 @@ section {
 }
 .visual {
   width: 40%;
+  max-width: 300px;
   border-radius: 50%;
 }
 @media screen and (max-width:647px) {
