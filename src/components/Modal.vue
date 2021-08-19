@@ -81,36 +81,13 @@ export default {
   text-transform: uppercase;
   margin: 10px;
 }
-
-/* sale styles */
-.modal.sale {
-  background: crimson;
-  color: ivory;
-}
-.modal.sale h1{
-  color: lavender;
-}
-.modal.sale .actions {
-  color: white;
-}
-.modal.sale .actions a {
-  color: white;
+.modal .actions a:hover,
+.modal .actions a:active,
+.modal .actions a:focus{
+  color: #fff;
+  background-color: #27763D;
 }
 
-/* dark styles */
-.modal.dark{
-  background: darkolivegreen;
-  color:gainsboro;
-}
-.modal.dark h1{
-  color:gainsboro;
-}
-.modal.dark .actions {
-  color: gainsboro;
-}
-.modal.dark .actions a {
-  color: gainsboro;
-}
 @media screen and (min-width:636px) {
   .modal .close {
     right:calc(50% - 270px);

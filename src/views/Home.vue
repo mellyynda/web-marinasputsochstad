@@ -3,7 +3,7 @@
       <div class="content-box flex-container">
         <div class="action-box">
           <h1>Prisvärd städning och fönsterputs i Stockholms län</h1>
-          <router-link to="/services" class="action-button">Ta mig till pris listan</router-link>
+          <router-link to="/services" >Ta mig till pris listan</router-link>
         </div>
       </div>
       
@@ -83,10 +83,14 @@ export default {
 .action-box a {
   color: #fff;
   background: #88C341;
-  padding: 8px 10px;
+  padding: 8px 15px;
   border-radius: 20px;
   text-transform: uppercase;
   text-shadow: 0px 3px 3px rgba(255,255,255,0.5) inset;
+}
+.action-box a:hover,
+.action-box a:active{
+  background: #79ad3a;
 }
 
 .welcome{

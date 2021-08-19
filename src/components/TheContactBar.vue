@@ -49,4 +49,8 @@ export default {
   font-family: 'Raleway', 'Open Sans', sans-serif;
   font-size: 1.1rem;
 }
+.contact-details a:hover,
+.contact-details a:active{
+  transform: scale(1.1) ;
+}
 </style>

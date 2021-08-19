@@ -7,7 +7,7 @@
           <img class="social" src="../assets/icons/social/facebook.png" alt="gå till facebook">
           <img class="social" src="../assets/icons/social/instagram.png" alt="gå till instagram">
         </div>
-        <div class="footer-elem">
+        <div class="footer-elem footer-link">
           <span><router-link to="/covid-info">Så hanterar vi Covid-19</router-link></span>
         </div>
         <div class="footer-elem">
@@ -63,6 +63,10 @@ h4 {
 }
 .footer-elem {
   margin: 10px 0;
+}
+.footer-link{
+  border-bottom: 0.5px solid #fff;
+  width: fit-content;
 }
 .social {
   width: 32px;

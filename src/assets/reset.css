@@ -8,7 +8,7 @@
   padding: 0;
 }
 *:focus {
-  outline: 2px dotted #FF1D15;
+  outline: none;
 }
 html {
   scroll-behavior: smooth;

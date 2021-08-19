@@ -3,7 +3,6 @@
   <nav id="nav">
     <router-link to="/" class="logo-container">
       <img class="logo" alt="logo" src="../assets/logo.png">
-      <img class="logo" alt="logo" src="../assets/company-name.png">
     </router-link>
     <div class="nav-elem">
       <router-link to="/services" :class="{ 'nav-link': true, active: currentRoute === 'Services' }">Städtjänster</router-link>
@@ -32,24 +31,23 @@ export default {
   display: flex;
   align-items: center;
   margin-top: 50px;
+  gap: 10%;
 }
 .logo-container {
-  max-width: 130px;
+  max-width: 250px;
 }
 .logo {
-  width: 100%;
-  max-width: 130px;
+  width: 90%;
 }
 .nav-elem {
-  margin-left:10%;
   flex-grow: 1;
   display: inline-flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10%;
 }
 .nav-link {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.26rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #818181;
@@ -59,7 +57,11 @@ export default {
   color: #000;
   border-bottom: 2px solid #000;
 }
-@media screen and (max-width:500px) {
+nav .nav-elem a:hover,
+nav .nav-elem a:active{
+  transform: scale(1.04) ;
+}
+@media screen and (max-width:640px) {
   .nav-elem {
     align-self: stretch;
     flex-direction: column;

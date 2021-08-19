@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .page {
-  margin: 40px auto;
+  margin: 25px auto;
 }
 .page>img, .page .title, .page p {
   margin-bottom:25px;

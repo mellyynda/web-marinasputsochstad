@@ -115,40 +115,6 @@ export default {
           ]
         },
         {
-          title: 'Trappstädning',
-          img: 'stairs',
-          imgXS: 'stairs',
-          price: '200kr/timme',
-          use: true,
-          details: [
-            {
-              room:"TRAPPHUS OCH ENTRÉ:",
-              item:[
-                "Soppning och moppning av golv.",
-                "Soppning och moppning av hissgolv.",
-                "Glas putsas I entrédörr.",
-                "Putsning av speglar.",
-                "Dammsugning av mattor."
-              ]
-            },
-            {
-              room:"TVÄTTSTUGA:",
-              item:[
-                "Avtorkning av tvättmaskiner och torktumlare.",
-                "Soppning och moppning av golv ."
-              ]
-            },
-            {
-              room:"ÖVRIGA TJÄNSTER:",
-              item:[
-                "Element våttorkas – 200kr/timme.",
-                "Ledstång våttorkas – 200kr/timme.", 
-                "Väggar i hiss rengörs - 200kr/timme."
-              ]
-            }
-          ]
-        },
-        {
           title: 'Flyttstädning',
           img: 'move',
           imgXS: 'move',
@@ -198,6 +164,53 @@ export default {
                 "Avtorkning av fast belysning.",
               ]
             }
+          ]
+        },
+        {
+          title: 'Trappstädning',
+          img: 'stairs',
+          imgXS: 'stairs',
+          price: '200kr/timme',
+          use: true,
+          details: [
+            {
+              room:"TRAPPHUS OCH ENTRÉ:",
+              item:[
+                "Soppning och moppning av golv.",
+                "Soppning och moppning av hissgolv.",
+                "Glas putsas I entrédörr.",
+                "Putsning av speglar.",
+                "Dammsugning av mattor."
+              ]
+            },
+            {
+              room:"TVÄTTSTUGA:",
+              item:[
+                "Avtorkning av tvättmaskiner och torktumlare.",
+                "Soppning och moppning av golv ."
+              ]
+            },
+            {
+              room:"ÖVRIGA TJÄNSTER:",
+              item:[
+                "Element våttorkas – 200kr/timme.",
+                "Ledstång våttorkas – 200kr/timme.", 
+                "Väggar i hiss rengörs - 200kr/timme."
+              ]
+            }
+          ]
+        },
+        {
+          title: 'Strykning',
+          img: 'shirts',
+          imgXS: 'shirts',
+          price: '200kr/timme',
+          use: true,
+          details: [
+            {
+              room:"Behöver du hjälp med strykning? Vi kan hjälpa dig med att både stryka kläder och hemtextilier.",
+              item:[]
+            },
           ]
         },
         {
@@ -264,19 +277,6 @@ export default {
               ]
             }
           ]
-        },
-        {
-          title: 'Strykning',
-          img: 'shirts',
-          imgXS: 'shirts',
-          price: '200kr/timme',
-          use: true,
-          details: [
-            {
-              room:"Behöver du hjälp med strykning? Vi kan hjälpa dig med att både stryka kläder och hemtextilier.",
-              item:[]
-            },
-          ]
         }
       ]
     }
@@ -291,7 +291,7 @@ export default {
 
 <style scoped>
 .services {
-  margin: 45px auto;
+  margin: 25px auto;
 }
 .title-box{
   margin-bottom: 35px;
@@ -304,7 +304,7 @@ export default {
   align-items: center;
 }
 .card-box>div {
-  flex: 0 1 260px;
+  flex: 0 1 245px;
   margin-bottom: 25px;
 }
 </style>
