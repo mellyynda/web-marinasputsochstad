@@ -1,31 +1,25 @@
 <template>
-  <div class="services">
+  <div class="services">    
+    <div class="content-box title-box">
+      <h2>Vi erbjuder städtjänster av hög kvalitet</h2>
+      <p>Vår städfirma erbjuder städtjänster för hemmet, företaget och flytten.</p>
+    </div>
     <div class="card-box content-box">
       <div v-for="card in filterCards(cards)" :key="card.title">
         <Card :card="card" />
       </div>
     </div>
-    <div class="content-box">
-      <Article 
-        title="Vi erbjuder städtjänster av hög kvalitet"
-        text="Vår städfirma erbjuder städtjänster för hemmet, företaget och flytten. Ut magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        bold="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        img="services/quality.png"
-        imgAlt="ren bäd"
-      />
-    </div>
+
   </div>
 </template>
 
 <script>
 import Card from '../components/Card.vue'
-import Article from '../components/Article.vue'
 
 export default {
   name: 'Services',
   components: {
-    Card,
-    Article
+    Card
   },
   data() {
     return {
@@ -100,7 +94,7 @@ export default {
           title: 'Kontorstädning',
           img: 'office',
           imgXS: 'office',
-          price: 'Ring oss för offert!',
+          price: '200kr/timme',
           use: true,
           details: [
             {
@@ -124,7 +118,7 @@ export default {
           title: 'Trappstädning',
           img: 'stairs',
           imgXS: 'stairs',
-          price: 'Ring oss för offert!',
+          price: '200kr/timme',
           use: true,
           details: [
             {
@@ -158,7 +152,7 @@ export default {
           title: 'Flyttstädning',
           img: 'move',
           imgXS: 'move',
-          price: '40 kr/mp',
+          price: 'Ring oss för offert!',
           use: true,
           details: [
             {
@@ -275,7 +269,7 @@ export default {
           title: 'Strykning',
           img: 'shirts',
           imgXS: 'shirts',
-          price: 'Ring oss för offert!',
+          price: '200kr/timme',
           use: true,
           details: [
             {
@@ -298,6 +292,9 @@ export default {
 <style scoped>
 .services {
   margin: 45px auto;
+}
+.title-box{
+  margin-bottom: 35px;
 }
 .card-box {
   display: flex;

@@ -25,10 +25,10 @@
         <div class="list">
           <p>Varfor ska du välja oss:</p>
           <ul>
-            <li>Vi ger ditt hem kärlek- vi hjälper dig med allt</li>
-            <li>Städningen är anpassad efter dina behov</li>
-            <li>Du får alltid samma städare</li>
-            <li>Vi har företagsförsäkring</li>
+            <li>Vi ger ditt hem kärlek- vi hjälper dig med allt.</li>
+            <li>Städningen är anpassad efter dina behov.</li>
+            <li>Du får alltid samma städare.</li>
+            <li>Vi har företagsförsäkring.</li>
             <li> <span> En nöjd kund är guld värd! </span></li>
           </ul>
         </div>
@@ -140,6 +140,7 @@ export default {
 @media screen and (max-width:647px) {
   .text-box {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 </style>
