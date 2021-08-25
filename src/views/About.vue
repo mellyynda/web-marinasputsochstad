@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       title: {
-        name:"Det lilla familjeföretag",
+        name:"Det lilla familjeföretaget",
         },
       img: "about/hands",
       imgXS:"about/hands-mobile",

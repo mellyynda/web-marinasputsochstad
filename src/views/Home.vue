@@ -29,7 +29,7 @@
             <li>Städningen är anpassad efter dina behov.</li>
             <li>Du får alltid samma städare.</li>
             <li>Vi har företagsförsäkring.</li>
-            <li> <span> En nöjd kund är guld värd! </span></li>
+            <li>En nöjd kund är guld värd!</li>
           </ul>
         </div>
       </div>
@@ -117,9 +117,6 @@ export default {
 .text-box>.list ul {
  list-style: inside;
  margin-bottom: 20px;
-}
-.text-box>.list>ul>li>span {
-  color: #db1a13;
 }
 .welcome>a {
   text-transform: uppercase;

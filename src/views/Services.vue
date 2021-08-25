@@ -3,6 +3,7 @@
     <div class="content-box title-box">
       <h2>Vi erbjuder städtjänster av hög kvalitet</h2>
       <p>Vår städfirma erbjuder städtjänster för hemmet, företaget och flytten.</p>
+      <p>*Alla priser anges med RUT-avdrag</p>
     </div>
     <div class="card-box content-box">
       <div v-for="card in filterCards(cards)" :key="card.title">
@@ -29,7 +30,7 @@ export default {
           title: 'Hemstädning',
           img: 'home',
           imgXS: 'home',
-          price: '200 kr/timme',
+          price: '200kr/timme*',
           use: true,
           details: [
             {
@@ -82,11 +83,14 @@ export default {
             {
               room:"ÖVRIGA TJÄNSTER:",
               item:[
-                "Rengöring av ugn/ kylskåp inuti – 200kr/timme.",
-                "Strykning – 200kr/timme.", 
-                "Städa inuti lådor och skåp - 200kr/timme.",
-                "Bäddar rent om nya lakan finns tillgängliga  - 200kr/timme." 
+                "Rengöring av ugn/ kylskåp inuti – 200kr/timme*.",
+                "Strykning – 200kr/timme*.", 
+                "Städa inuti lådor och skåp - 200kr/timme*.",
+                "Bäddar rent om nya lakan finns tillgängliga  - 200kr/timme*."
               ]
+            },
+            {
+              room:"*Alla priser anges med RUT-avdrag"
             }
           ]
         },
@@ -94,7 +98,7 @@ export default {
           title: 'Kontorstädning',
           img: 'office',
           imgXS: 'office',
-          price: '200kr/timme',
+          price: '200kr/timme*',
           use: true,
           details: [
             {
@@ -170,7 +174,7 @@ export default {
           title: 'Trappstädning',
           img: 'stairs',
           imgXS: 'stairs',
-          price: '200kr/timme',
+          price: '200kr/timme*',
           use: true,
           details: [
             {
@@ -193,10 +197,13 @@ export default {
             {
               room:"ÖVRIGA TJÄNSTER:",
               item:[
-                "Element våttorkas – 200kr/timme.",
-                "Ledstång våttorkas – 200kr/timme.", 
-                "Väggar i hiss rengörs - 200kr/timme."
+                "Element våttorkas – 200kr/timme*.",
+                "Ledstång våttorkas – 200kr/timme*.", 
+                "Väggar i hiss rengörs - 200kr/timme*."
               ]
+            },
+            {
+              room:"*Alla priser anges med RUT-avdrag"
             }
           ]
         },
@@ -204,7 +211,7 @@ export default {
           title: 'Strykning',
           img: 'shirts',
           imgXS: 'shirts',
-          price: '200kr/timme',
+          price: '200kr/timme*',
           use: true,
           details: [
             {
