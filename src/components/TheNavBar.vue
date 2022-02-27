@@ -38,6 +38,7 @@ export default {
 }
 .logo {
   width: 90%;
+  padding: 25px 10px;
 }
 .nav-elem {
   flex-grow: 1;

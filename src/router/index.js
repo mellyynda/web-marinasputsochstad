@@ -28,7 +28,7 @@ const routes = [
     name: 'About',
     component: About,
     meta: {
-      title: 'Marinas Puts och Städ | Den lilla familjeföretag med kunden i fokus',
+      title: 'Marinas Puts och Städ | Stockholmsbaserat familjeföretag med över 18 år erfarenhet inom branschen',
       metaTags: [
         {
           name: 'description',
