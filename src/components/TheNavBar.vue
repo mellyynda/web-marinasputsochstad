@@ -2,7 +2,7 @@
 <div class="content-box">
   <nav id="nav">
     <router-link to="/" class="logo-container">
-      <img class="logo" alt="logo" src="../assets/logo.png">
+      <img class="logo" alt="logo" src="../assets/logo.jpg">
     </router-link>
     <div class="nav-elem">
       <router-link to="/services" :class="{ 'nav-link': true, active: currentRoute === 'Services' }">Städtjänster</router-link>
