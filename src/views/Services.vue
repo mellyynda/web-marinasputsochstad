@@ -1,9 +1,9 @@
 <template>
   <div class="services">    
     <div class="content-box title-box">
-      <h2>Vi erbjuder städtjänster av hög kvalitet</h2>
+      <h2>Vi erbjuder städtjänster av hög kvalité</h2>
       <p>Vår städfirma erbjuder städtjänster för hemmet, företaget och flytten.</p>
-      <p>*Alla priser anges med RUT-avdrag</p>
+      <p>*Alla priser anges efter RUT-avdrag</p>
     </div>
     <div class="card-box content-box">
       <div v-for="card in filterCards(cards)" :key="card.title">
@@ -98,7 +98,7 @@ export default {
           title: 'Kontorstädning',
           img: 'office',
           imgXS: 'office',
-          price: '200kr/timme*',
+          price: '225kr/timme*',
           use: true,
           details: [
             {
