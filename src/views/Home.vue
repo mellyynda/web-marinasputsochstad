@@ -3,7 +3,7 @@
       <div class="content-box flex-container">
         <div class="action-box">
           <h1>Prisvärd städning och fönsterputs i Stockholms län</h1>
-          <router-link to="/services" >Ta mig till pris listan</router-link>
+          <router-link to="/services" >Ta mig till prislistan</router-link>
         </div>
       </div>
       
@@ -23,7 +23,7 @@
       <div class="text-box">
         <p>Vill du ha hjälp med till exempel hemstädning, storstädning, kontorsstädning, trappstädning, fönsterputs eller flyttstädning?  Kika i menyn ovan för att se vad vi har att erbjuda samt mer information. </p>
         <div class="list">
-          <p>Varfor ska du välja oss:</p>
+          <p>Varför ska du välja oss:</p>
           <ul>
             <li>Vi ger ditt hem kärlek- vi hjälper dig med allt.</li>
             <li>Städningen är anpassad efter dina behov.</li>
