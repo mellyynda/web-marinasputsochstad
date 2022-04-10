@@ -4,6 +4,9 @@
       <h2>Vi erbjuder städtjänster av hög kvalité</h2>
       <p>Vår städfirma erbjuder städtjänster för hemmet, företaget och flytten.</p>
       <p>*Alla priser anges efter RUT-avdrag</p>
+      <!-- <div v-for="message, index in metadata" :key="Object.keys(metadata)[index]">
+        {{ message.text + ' Created at: '+ message.createdAt }}
+      </div> -->
     </div>
     <div class="card-box content-box">
       <div v-for="card in filterCards(cards)" :key="card.title">
@@ -16,6 +19,7 @@
 
 <script>
 import Card from '../components/Card.vue'
+import { store } from '../main'
 
 export default {
   name: 'Services',
@@ -288,10 +292,18 @@ export default {
       ]
     }
   },
+  computed: {
+    metadata() {
+      return this.$store.state.data
+    }
+  },
   methods: {
     filterCards(cards) {
      return cards.filter(card => card.use)
     }
+  },
+  beforeCreate() {
+    store.dispatch('getAsyncData')
   }
 }
 </script>

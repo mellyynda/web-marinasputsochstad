@@ -41,7 +41,6 @@
 <script>
 import Article from '../components/Article.vue'
 
-
 export default {
   name: 'Home',
   components: {
