@@ -3,7 +3,7 @@
       <div class="content-box flex-container">
         <div class="action-box">
           <h1>Prisvärd städning och fönsterputs i Stockholms län</h1>
-          <router-link to="/services" >Ta mig till prislistan</router-link>
+          <router-link to="/services" >Ta mig till städtjänstlistan</router-link>
         </div>
       </div>
       

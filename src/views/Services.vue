@@ -3,7 +3,8 @@
     <div class="content-box title-box">
       <h2>Vi erbjuder städtjänster av hög kvalité</h2>
       <p>Vår städfirma erbjuder städtjänster för hemmet, företaget och flytten.</p>
-      <p>*Alla priser anges efter RUT-avdrag</p>
+      <p>Ring oss för offert!</p>
+      <!-- <p>*Alla priser anges efter RUT-avdrag</p> -->
     </div>
     <div class="card-box content-box">
       <div v-for="card in filterCards(cards)" :key="card.title">
@@ -30,7 +31,7 @@ export default {
           title: 'Hemstädning',
           img: 'home',
           imgXS: 'home',
-          price: '200kr/timme*',
+          price: '',
           use: true,
           details: [
             {
@@ -83,14 +84,14 @@ export default {
             {
               room:"ÖVRIGA TJÄNSTER:",
               item:[
-                "Rengöring av ugn/ kylskåp inuti – 200kr/timme*.",
-                "Strykning – 200kr/timme*.", 
-                "Städa inuti lådor och skåp - 200kr/timme*.",
-                "Bäddar rent om nya lakan finns tillgängliga  - 200kr/timme*."
+                "Rengöring av ugn/ kylskåp inuti.",
+                "Strykning.", 
+                "Städa inuti lådor och skåp.",
+                "Bäddar rent om nya lakan finns tillgängliga."
               ]
             },
             {
-              room:"*Alla priser anges med RUT-avdrag"
+              // room:"*Alla priser anges med RUT-avdrag"
             }
           ]
         },
@@ -98,7 +99,7 @@ export default {
           title: 'Kontorstädning',
           img: 'office',
           imgXS: 'office',
-          price: '225kr/timme*',
+          price: '',
           use: true,
           details: [
             {
@@ -122,7 +123,7 @@ export default {
           title: 'Flyttstädning',
           img: 'move',
           imgXS: 'move',
-          price: 'Ring oss för offert!',
+          price: '',
           use: true,
           details: [
             {
@@ -174,7 +175,7 @@ export default {
           title: 'Trappstädning',
           img: 'stairs',
           imgXS: 'stairs',
-          price: '200kr/timme*',
+          price: '',
           use: true,
           details: [
             {
@@ -197,13 +198,13 @@ export default {
             {
               room:"ÖVRIGA TJÄNSTER:",
               item:[
-                "Element våttorkas – 200kr/timme*.",
-                "Ledstång våttorkas – 200kr/timme*.", 
-                "Väggar i hiss rengörs - 200kr/timme*."
+                "Element våttorkas.",
+                "Ledstång våttorkas.", 
+                "Väggar i hiss rengörs."
               ]
             },
             {
-              room:"*Alla priser anges med RUT-avdrag"
+              // room:"*Alla priser anges med RUT-avdrag"
             }
           ]
         },
@@ -211,7 +212,7 @@ export default {
           title: 'Strykning',
           img: 'shirts',
           imgXS: 'shirts',
-          price: '200kr/timme*',
+          price: '',
           use: true,
           details: [
             {
@@ -224,7 +225,7 @@ export default {
           title: 'Fönsterputs',
           img: 'window',
           imgXS: 'window',
-          price: 'Ring oss för offert!',
+          price: '',
           use: true,
           details: [
             {
@@ -237,7 +238,7 @@ export default {
           title: 'Storstädning',
           img: 'big',
           imgXS: 'big',
-          price: 'Ring oss för offert!',
+          price: '',
           use: true,
           details: [
             {
